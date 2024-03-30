@@ -6,7 +6,7 @@ A basic app that allows users to add, remove, and edit the read status of their 
 About
 -----
 
-This project was completed as part of [The Odin Project](https://www.theodinproject.com/) curriculum.
+This project was completed as part of [The Odin Project](https://www.theodinproject.com/) [Javascript](https://www.theodinproject.com/paths/full-stack-javascript/courses/javascript) curriculum.
 
 These were the project requirements:
 
