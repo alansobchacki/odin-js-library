@@ -25,5 +25,6 @@ I learned how to build constructors and remove the default behavior of events th
 
 Notes
 -----
+It does NOT save the information between page reloads. This will be handled in a later part of the curriculum.
 
-It's ugly. I focused on getting the Javascript part first. I will return at a later stage and revamp the UI.
+And it's ugly. I focused on getting the Javascript part first. I will return at a later stage and revamp the UI.
