@@ -8,7 +8,7 @@ Here's the [live project demo.](https://alansobchacki.github.io/odin-library/)
 About
 -----
 
-This project was completed as part of [The Odin Project](https://www.theodinproject.com/) [Javascript](https://www.theodinproject.com/paths/full-stack-javascript/courses/javascript) curriculum.
+This project was completed as part of [The Odin Project](https://www.theodinproject.com/) [Javascript](https://www.theodinproject.com/paths/full-stack-javascript/courses/javascript) curriculum. It is the first project required for completion of the JavaScript Course [1/12].
 
 These were the project requirements:
 
