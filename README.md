@@ -3,7 +3,7 @@ Project: Library
 
 A basic app that allows users to add, remove, and edit the read status of their books.
 
-Here's the [live project demo.](https://alansobchacki.github.io/odin-library/)
+Here's the [live project demo.](https://alansobchacki.github.io/odin-js-library/)
 
 About
 -----
