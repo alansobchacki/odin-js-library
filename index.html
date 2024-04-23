@@ -1,35 +1,64 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <link rel="stylesheet" href="style.css">
-  <script src="script.js" defer></script>
-  <title>Odin Library</title>
-</head>
-<body>
-  <div id="upperPart">
-    <h1>Add a new book by pressing the button below.</h1>
-    <button id="newBook" onclick="toggleForm()">New Book</button>
-  </div>
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="style.css" />
+    <script src="script.js" defer></script>
+    <title>Odin Library</title>
+  </head>
+  <body>
+    <div id="main-container">
+      <div id="upper-part">
+        <h1>Add a new book by pressing the button below.</h1>
+        <button id="new-book-button" onclick="toggleForm()">New Book</button>
+      </div>
 
-  <div id="middlePart">
-    <div id="formContainer" class="hidden">
-      <form id="bookForm" onsubmit="addBook(event)">
-        <input type="text" id="author" name="author" placeholder="Author name here.">
-        <input type="text" id="title" name="title" placeholder="Book title here.">
-        <input type="number" id="pages" name="pages" placeholder="Number of pages here.">
-        <input type="number" id="price" name="price" placeholder="Price here.">
-        <input type="checkbox" id="read" name="read">
-        <label for="read"> I already read it</label><br>
-        <button id="submitBook" type="submit">Submit</button>
-      </form>
+      <div id="middle-part">
+        <div id="form-container" class="hidden">
+          <form id="book-form" onsubmit="addBook(event)">
+            <input
+              type="text"
+              id="author"
+              name="author"
+              placeholder="Author name here."
+              required
+            />
+            <input
+              type="text"
+              id="title"
+              name="title"
+              placeholder="Book title here."
+              required
+            />
+            <input
+              type="number"
+              id="pages"
+              name="pages"
+              placeholder="Number of pages here."
+              min="10"
+              max="2000"
+              required
+            />
+            <input
+              type="number"
+              id="price"
+              name="price"
+              placeholder="Price here."
+              min="1"
+              required
+            />
+            <input type="checkbox" id="read" name="read" />
+            <label for="read"> I already read it</label><br />
+            <button id="submit-book" type="submit">Submit</button>
+          </form>
+        </div>
+      </div>
+
+      <div id="lower-part">
+        <h2>Your Library:</h2>
+        <div id="book-container"></div>
+      </div>
     </div>
-  </div>
-
-  <div id="bottomPart">
-    <h2>Your Library:</h2>
-    <div id="bookContainer"></div>
-  </div>
-</body>
+  </body>
 </html>

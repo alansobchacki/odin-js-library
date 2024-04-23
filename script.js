@@ -18,13 +18,13 @@ function addBookToLibrary(author, title, pages, was_read, price) {
 }
 
 function addBook(event) {
-  event.preventDefault(); // prevent default form submission behavior
-  
-  const author = document.getElementById('author').value;
-  const title = document.getElementById('title').value;
-  const pages = document.getElementById('pages').value;
-  const price = document.getElementById('price').value;
-  const was_read = document.getElementById('read').checked;
+  event.preventDefault(); // prevents default form submission behavior
+
+  const author = document.getElementById("author").value;
+  const title = document.getElementById("title").value;
+  const pages = document.getElementById("pages").value;
+  const price = document.getElementById("price").value;
+  const was_read = document.getElementById("read").checked;
 
   if (author.length == 0 || title.length == 0) {
     return;
@@ -35,7 +35,7 @@ function addBook(event) {
 }
 
 function displayBooks() {
-  const bookContainer = document.getElementById("bookContainer");
+  const bookContainer = document.getElementById("book-container");
 
   refreshBooks();
 
@@ -72,25 +72,23 @@ function removeBook(index, title) {
 }
 
 function clearForm() {
-  document.getElementById('author').value = '';
-  document.getElementById('title').value = '';
-  document.getElementById('pages').value = '';
-  document.getElementById('price').value = '';
-  document.getElementById('read').checked = false;
+  document.getElementById("author").value = "";
+  document.getElementById("title").value = "";
+  document.getElementById("pages").value = "";
+  document.getElementById("price").value = "";
+  document.getElementById("read").checked = false;
 }
 
 function toggleForm() {
-  let form = document.getElementById("formContainer");
+  let form = document.getElementById("form-container");
 
-  if (form.classList.contains("hidden")) {
-    form.classList.remove("hidden");
-  } else {
-    form.classList.add("hidden");
-  }
+  form.className == "hidden"
+    ? form.classList.remove("hidden")
+    : form.classList.add("hidden");
 }
 
 function refreshBooks() {
-  const bookContainer = document.getElementById("bookContainer");
+  const bookContainer = document.getElementById("book-container");
 
   while (bookContainer.firstChild) {
     bookContainer.removeChild(bookContainer.firstChild);

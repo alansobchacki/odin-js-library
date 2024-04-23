@@ -1,62 +1,71 @@
-* {  
+/* global rules */
+* {
   margin-top: 0;
 }
 
 body {
-  background-color: rgb(56, 56, 56);
-  font-family: 'Roboto';
+  background-color: rgb(20, 20, 20);
+  font-family: sans-serif;
 }
 
-div {
-  border-radius: 6px;
+button:hover {
+  cursor: pointer;
 }
 
-h1, h2 {
+h1,
+h2 {
   padding-top: 1%;
   color: white;
 }
 
 h1 {
+  margin-top: 5%;
   text-align: center;
 }
 
-p, label {
-  color:rgb(179, 179, 179);
+p,
+label {
+  color: rgb(179, 179, 179);
 }
 
-#newBook {
+/* upper part of website (header, add book button) */
+
+#new-book-button {
   text-align: center;
+  font-size: 1.4rem;
   margin-bottom: 5%;
 }
 
-#upperPart {
+#upper-part {
   display: grid;
   grid-template: 1fr 1fr / 1fr 1fr 1fr 1fr 1fr;
   gap: 6px;
 }
 
-#upperPart h1 {
+#upper-part h1 {
   grid-row: 1 / 2;
   grid-column: 2 / 5;
 }
 
-#upperPart button {
+#upper-part button {
   grid-row: 2 / 3;
   grid-column: 3 / 4;
 }
 
-#newBook {
+#new-book {
   grid-column: 3 / 4;
 }
 
-#middlePart {
+/* middle part of website (form to add new books) */
+
+#middle-part {
   display: flex;
   justify-items: center;
   justify-content: center;
   align-items: flex-start;
 }
 
-#submitBook {
+#submit-book {
   width: 20%;
 }
 
@@ -64,23 +73,25 @@ p, label {
   display: none;
 }
 
-#bottomPart {
+/* lower part of website (list of books) */
+
+#lower-part {
   display: grid;
   grid-template: 0.3fr 1fr / 1fr 1fr 1fr 1fr 1fr;
   justify-items: center;
+  align-content: center;
 }
 
-#bottomPart h2 {
+#lower-part h2 {
   grid-row: 1 / 2;
   grid-column: 3 / 4;
 }
 
-#bookContainer {
+#book-container {
+  display: flex;
+  flex-direction: row;
+
+  gap: 5%;
   grid-row: 2 / 3;
   grid-column: 1 / 5;
-}
-
-#bookContainer div {
-  width: 200px;
-  height: 200px;
 }
